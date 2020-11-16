@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+:root {
+    font-size: 62.5%;
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.landing-page {
+    width: 70vw;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.landing-page section {
+    flex: 1 1 300px;
+    padding: 1.5rem;
+}
+
+.landing-page h2 {
+    font-size: clamp(2.5rem,4rem,3.5rem);
+    margin-bottom: 1rem;
+}
+
+.info {
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info p {
+    font-size: clamp(.5rem,1.3rem,1.5rem);
+}
+
+.subscribe {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe .freeTrial {
+    text-align: center;
+    background: var(--blue);
+    font-size: clamp(1.5rem,2.3rem,1.5rem);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px var(--darkBlue);
+    margin-bottom: 1.2rem;
+}
+
+.subscribe p span {
+    font-weight: bold;
+}
+
+form {
+    flex-direction: column;
+    background: #fff;
+    padding: 5rem;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px var(--darkBlue);
+}
+
+form .form-item{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+
+form div img.icon-error {
+    position: absolute;
+    right: 1rem;
+    top: .4rem;
+    opacity: 0;
+}
+
+form div span.message-error {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+form input {
+    padding: .5rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--grayishBlue);
+}
+
+form input::placeholder {
+    padding: 1.2rem;
+    color: var(--darkBlue);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+form button {
+    text-align: center;
+    background: var(--green);
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+form p.terms {
+    color: var(--grayishBlue);
+    font-size: .8rem;
+}
+
+form p.terms span {
+    color: var(--red);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 900px){
+
+    body {
+        width: fit-content;
+    }
+
+    .landing-page {
+        width: 90%;
+        height: 90%;
+        display: flex;
+    }
+
+    .landing-page h2 {
+        text-align: center;
+    }
+    
+    .landing-page .info p {
+        text-align: center;
+    }
+     form {
+         padding: 1rem;
+     }
+
+     form p.terms {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    footer {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+} 
