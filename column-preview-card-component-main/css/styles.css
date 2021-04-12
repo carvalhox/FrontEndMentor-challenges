@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+:root {
+   font-size: 62.5%;
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-Cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+   --paragraphs: hsla(0, 0%, 100%, 0.75);
+   --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--very-light-gray);
+}
+
+main {
+   width: 80vw;
+   height: 80vh;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+section {
+   padding: 4rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+section .info {
+   height: 70%;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+}
+
+section .info h1 {
+   color: var(--very-light-gray);
+   font-family: "Big Shoulders Display", cursive;
+   text-transform: uppercase;
+   font-size: 3rem;
+   font-weight: 400;
+}
+
+section .info p {
+   color: var(--paragraphs);
+   font-family: "Lexend Deca", sans-serif;
+   max-width: 20rem;
+   font-size: 1.5rem;
+}
+
+section a {
+   background: var(--very-light-gray);
+   padding: 1rem;
+   width: 12rem;
+   text-align: center;
+   color: var(--bright-orange);
+   font-weight: 700;
+   font-family: "Lexend Deca", sans-serif;
+   border-radius: 1.5rem;
+   font-size: 1.2rem;
+}
+
+section a:hover {
+   background: transparent;
+   color: var(--very-light-gray);
+   border: 2px solid var(--very-light-gray);
+}
+
+section:nth-child(1) {
+   background: var(--bright-orange);
+   border-radius: 15px 0px 0px 15px;
+}
+
+section:nth-child(2) {
+   background: var(--dark-Cyan);
+}
+
+section:nth-child(3) {
+   background: var(--very-dark-cyan);
+   border-radius: 0px 15px 15px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+   main {
+      grid-template-columns: 1fr;
+   }
+   section {
+      height: 50vh;
+   }
+   section:nth-child(1) {
+      border-radius: 15px 15px 0px 0px;
+   }
+
+   section:nth-child(3) {
+      background: var(--very-dark-cyan);
+      border-radius: 0px 0px 15px 15px;
+   }
+}
