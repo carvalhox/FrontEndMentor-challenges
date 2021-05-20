@@ -12,6 +12,7 @@ This repository contains all my solutions for challenges provided by <a href="ht
 - [Huddle landing page with a single introductory section](#id02)
 - [3 Column Card Component](#id03)
 - [Ping single column coming soon page](#id04)
+- [Stats preview card component](#id05)
 
 ## Intro component with sign-up form <a name="id01"></a>
 
@@ -50,5 +51,14 @@ This repository contains all my solutions for challenges provided by <a href="ht
 
 <ul>
    <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/ping-coming-soon-page-master">Solution</a>
+   </li>
+</ul>
+
+## Stats preview card component <a name="id05"></a>
+
+![Frontend Mentor _ Stats preview card component](https://user-images.githubusercontent.com/34722707/119041168-a9303180-b98c-11eb-9354-ba466c2b6de2.gif)
+
+<ul>
+   <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/stats-preview-card-component-main">Solution</a>
    </li>
 </ul>
