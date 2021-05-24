@@ -1,0 +1,120 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   font-family: 'Karla', sans-serif;
+   list-style: none;
+}
+
+:root {
+   --cyan: hsl(179, 62%, 43%);
+   --bright-Yellow: hsl(71, 73%, 54%);
+   --light-Gray: hsl(204, 43%, 93%);
+   --grayish-Blue: hsl(218, 22%, 67%);
+   --white: #fff;
+
+   --padding: 1.6rem 2.4rem;
+}
+
+body {
+   background: var(--light-Gray);
+   min-height: 100vh;
+   padding: 0.8rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 {
+   color: var(--cyan);
+   margin-bottom: 0.8rem;
+}
+
+h3 {
+   color: var(--light-Gray);
+   margin-bottom: 0.8rem;
+}
+
+p,
+ul li {
+   color: var(--light-Gray);
+   font-weight: 400;
+}
+
+li {
+   line-height: 1.5;
+   font-size: 0.8rem;
+}
+
+main {
+   width: min(90vw, 700px);
+   border-radius: 0.3rem;
+   overflow: hidden;
+}
+
+.call-to-action {
+   background: var(--white);
+   padding: var(--padding);
+}
+
+.call-to-action p:nth-child(2) {
+   color: var(--bright-Yellow);
+   margin-bottom: 0.5rem;
+}
+
+.call-to-action p {
+   color: var(--grayish-Blue);
+   font-weight: 400;
+   line-height: 1.5;
+}
+
+.subscribe {
+   display: flex;
+}
+
+.subscribe > div {
+   flex: 1;
+   flex-basis: 50%;
+   padding: var(--padding);
+}
+
+.subscribe .sign-up {
+   background: var(--cyan);
+}
+
+.subscribe .sign-up p {
+   margin-bottom: 0.8rem;
+}
+
+.subscribe .sign-up p > span {
+   color: var(--white);
+   font-size: 1.6rem;
+   margin-right: 0.3rem;
+}
+
+.subscribe .sign-up sup {
+   color: var(--light-Gray);
+}
+
+.subscribe .sign-up button {
+   width: 100%;
+   background: var(--bright-Yellow);
+   padding: 0.8rem;
+   font-weight: 700;
+   color: var(--light-Gray);
+   margin-top: 2rem;
+   border: none;
+   border-radius: 0.2rem;
+}
+
+.subscribe .options-list {
+   background-color: hsl(179, 47%, 52%);
+}
+
+@media only screen and (max-width: 768px) {
+   .subscribe {
+      flex-direction: column;
+   }
+}
