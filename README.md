@@ -1,18 +1,15 @@
 ## <div align="center"> 🚀 Frontend Mentor Challenges 🚀 </div>
 
-## 🚀 #30DaysOfCSS Challenge 🚀
-
-## Goals
-
 This repository contains all my solutions for challenges provided by <a href="https://www.frontendmentor.io/">Frontend Mentor</a>.
 
 ---
 
-- [Intro component with sign-up form](#id01)
-- [Huddle landing page with a single introductory section](#id02)
-- [3 Column Card Component](#id03)
-- [Ping single column coming soon page](#id04)
-- [Stats preview card component](#id05)
+-  [Intro component with sign-up form](#id01)
+-  [Huddle landing page with a single introductory section](#id02)
+-  [3 Column Card Component](#id03)
+-  [Ping single column coming soon page](#id04)
+-  [Stats preview card component](#id05)
+-  [Single Price Grid Component](#id06)
 
 ## Intro component with sign-up form <a name="id01"></a>
 
@@ -60,5 +57,14 @@ This repository contains all my solutions for challenges provided by <a href="ht
 
 <ul>
    <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/stats-preview-card-component-main">Solution</a>
+   </li>
+</ul>
+
+## Single Price Grid Component <a name="id06"></a>
+
+![Frontend Mentor _ Single Price Grid Component](https://user-images.githubusercontent.com/34722707/119539610-c08f6600-bd62-11eb-8ab5-66e9f9230439.gif)
+
+<ul>
+   <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/single-price-grid-component-master">Solution</a>
    </li>
 </ul>
