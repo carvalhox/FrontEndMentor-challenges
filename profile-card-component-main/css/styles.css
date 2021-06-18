@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+   --dark-cyan: hsl(185, 75%, 39%);
+   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+   --dark-grayish-blue: hsl(227, 10%, 46%);
+   --dark-gray: hsl(0, 0%, 59%);
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+main {
+   position: relative;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url('../images/bg-pattern-top.svg') no-repeat -40% -504px,
+      var(--dark-cyan) url('../images/bg-pattern-bottom.svg') 732px 373px no-repeat;
+}
+
+section {
+   width: min(90vw, 350px);
+   /* min-height: 55vh; */
+   border-radius: 0.8rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: #fff url('../images/bg-pattern-card.svg') no-repeat top;
+   background-size: contain;
+}
+
+.profile-info {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.profile-info h3 {
+   font-size: 1.125rem;
+   margin: 20px 0 10px 0;
+}
+
+.profile-info h3 span {
+   color: var(--dark-gray);
+   font-weight: 100;
+   margin-left: 0.4rem;
+}
+
+.profile-info p {
+   font-size: 1rem;
+   color: var(--dark-gray);
+   font-weight: 400;
+}
+
+.profile-img img {
+   border-radius: 50%;
+   border: 5px solid #fff;
+   margin-top: 80px;
+}
+
+.profile-stats {
+   border-top: 1px solid var(--dark-gray);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 1.2rem;
+   padding: 1.2rem;
+}
+
+.stat {
+   text-align: center;
+}
+
+.stat p {
+   font-size: 1.125rem;
+   font-weight: 700;
+}
+
+.stat span {
+   display: block;
+   font-size: 0.6rem;
+   letter-spacing: 2px;
+   color: var(--dark-gray);
+   margin-top: 0.5rem;
+   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+   main {
+      background: url('../images/bg-pattern-top.svg') no-repeat -700px -600px,
+         var(--dark-cyan) url('../images/bg-pattern-bottom.svg') 180px 200px no-repeat;
+   }
+}
