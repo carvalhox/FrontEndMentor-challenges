@@ -33,7 +33,6 @@ main {
 
 section {
    width: min(90vw, 350px);
-   /* min-height: 55vh; */
    border-radius: 0.8rem;
    display: flex;
    flex-direction: column;
