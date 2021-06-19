@@ -10,6 +10,7 @@ This repository contains all my solutions for challenges provided by <a href="ht
 -  [Ping single column coming soon page](#id04)
 -  [Stats preview card component](#id05)
 -  [Single Price Grid Component](#id06)
+-  [Profile card component](#id07)
 
 ## Intro component with sign-up form <a name="id01"></a>
 
@@ -66,5 +67,14 @@ This repository contains all my solutions for challenges provided by <a href="ht
 
 <ul>
    <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/single-price-grid-component-master">Solution</a>
+   </li>
+</ul>
+
+## Profile card component <a name="id07"></a>
+
+![Frontend Mentor _ Profile card component](https://user-images.githubusercontent.com/34722707/122648222-93826900-d0fe-11eb-978f-753d61a8138c.gif)
+
+<ul>
+   <li><a href="https://github.com/laporeon/FrontEndMentor-challenges/tree/master/profile-card-component-main">Solution</a>
    </li>
 </ul>
